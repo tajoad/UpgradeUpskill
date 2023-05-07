@@ -187,4 +187,5 @@ const getUser = async (request, response, next) => {
   }
 };
 
+
 module.exports = { createUser, userLogin, getUser };

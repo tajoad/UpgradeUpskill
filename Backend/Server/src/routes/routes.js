@@ -4,6 +4,7 @@ const controller = require("../../controller/personController");
 const userController = require("../../controller/userController");
 const adminController = require("../../controller/adminController");
 const updateAdmin = require("../../controller/saveAdminProfile");
+const courseController = require("../../controller/coursesController");
 const multer = require("multer");
 const path = require("path");
 
@@ -43,5 +44,7 @@ router.get("/getuser/:id", userController.getUser);
 router.post("/registeradmin", adminController.createUser);
 router.post("/adminlogin", adminController.userLogin);
 router.get("/getadminuser/:id", adminController.getUser);
+router.post("/submitModule", courseController.createModule);
+router.get("/getmodules", courseController.displayModule);
 
 module.exports = router;

@@ -3,10 +3,9 @@
     <div v-show="modalActive" class="modal">
       <transition name="modal-animation-inner">
         <div v-show="modalActive" class="modal-inner">
-          <i @click="close" class="far fa-times-circle"></i>
+          <!-- <i @click="close" class="far fa-times-circle"></i> -->
           <!-- Modal Content -->
-          <slot />
-          <button @click="close" type="button">Close</button>
+          <slot/>
         </div>
       </transition>
     </div>
@@ -26,6 +25,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.submit {
+  text-align: right;
+}
 .modal-animation-enter-active,
 .modal-animation-leave-active {
   transition: opacity 0.3s cubic-bezier(0.52, 0.02, 0.19, 1.02);
@@ -56,7 +58,6 @@ export default {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(255, 255, 255, 0.7);
   .modal-inner {
     position: relative;
     max-width: 640px;
@@ -75,14 +76,12 @@ export default {
         color: crimson;
       }
     }
-    button {
-      padding: 20px 30px;
-      border: none;
-      font-size: 16px;
-      background-color: crimson;
-      color: #fff;
-      cursor: pointer;
-    }
   }
+}
+.modal-inner-inner {
+  border: 1px solid grey;
+}
+.btn-space {
+  margin-right: 50px;
 }
 </style>
