@@ -36,8 +36,7 @@
                 class="icn"
                 alt="">
         <div class="dp">
-            <img src="../images/people-lifestyle.jpg"
-                class="dpicn"
+            <img :src="this.updatedImage"
                 alt="dp">
             </div>
     </div>
@@ -46,16 +45,36 @@
 </template>
 
 <script>
+    import BrewMethodsAPI from "../api/resources/BrewMethods";
+    const backendUrl = "http://localhost:3002/";
+    const getUserData = "http://localhost:3002/displayperson";
+
     export default {
         name:"Header",
+        data() {
+          return{
+              id:this.$route.params.data,
+          }
+        },
         methods: {
             openNav: function() {
                 let menuicn = document.querySelector(".menuicn");
                 let nav = document.querySelector(".navcontainer");
                 
                     nav.classList.toggle("navclose");
-            }
-        }
+            },
+            getUserData: async function () {
+                const items = await BrewMethodsAPI.index(getUserData, this.id);
+                const newData = JSON.parse(items);
+                this.updatedImage = newData[0].imageName
+                const updateImg = `${backendUrl}${newData[0].imageName}`;
+                this.updatedImage = updateImg;
+                console.log(this.updatedImage);
+            },
+        },
+        mounted() {
+            this.getUserData();
+        },
 
     }
 </script>

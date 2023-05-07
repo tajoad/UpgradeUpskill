@@ -1,11 +1,10 @@
-import { createApp} from 'vue'
-import { createPinia } from 'pinia'
+import { createApp } from "vue";
+import { createPinia } from "pinia";
 
-import App from './App.vue'
-import router from './router/router';
-import Toaster from '@meforma/vue-toaster';
-
- 
+import App from "./App.vue";
+import router from "./router/router";
+import Toaster from "@meforma/vue-toaster";
+import 'video.js/dist/video-js.css'
 
 // import './assets/main.css'
 
@@ -14,21 +13,20 @@ import Toaster from '@meforma/vue-toaster';
 */
 
 // import "../node_modules/@fortawesome/fontawesome-free/css/all.css";
-import '@fortawesome/fontawesome-free/css/all.css'
-import '@fortawesome/fontawesome-free/js/all.js'
+import "@fortawesome/fontawesome-free/css/all.css";
+import "@fortawesome/fontawesome-free/js/all.js";
 
 /*
     Bootstrap CSS, JS
 */
 
 import "../node_modules/bootstrap/dist/css/bootstrap.css";
-import "../node_modules/bootstrap/dist/js/bootstrap.bundle"
+import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
 
-const app = createApp(App)
+const app = createApp(App);
 
-app.use(createPinia())
-app.use(router)
-app.use(Toaster)
+app.use(createPinia());
+app.use(router);
+app.use(Toaster);
 
-
-app.mount('#app')
+app.mount("#app");

@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100;1,400&family=Sora:wght@400;600;700&display=swap');
+
+*{
+    font-family: 'Sora', sans-serif;
+}
+
+.courses {
+    background-color: #114b5f;
+    color: white;
+    margin: 0;
+    height: 100vh;
+}
+.courses-header {
+    text-align: center;
+    font-weight: 500;
+    font-size: larger;
+}
+
+.card-body{
+    padding: 3px;
+}
+.card-text{
+    color: #114b5f;
+    font-weight: 300;
+    font-size: small;
+    padding: 5px;
+    text-align: justify;
+}
+
+.card{
+    width: 100%;
+}
+
+.card-img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}

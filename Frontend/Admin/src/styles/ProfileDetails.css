@@ -1,0 +1,91 @@
+body {
+  background: rgb(99, 39, 120);
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: #114b5f;
+}
+
+.profile-button {
+  background: #114b5f;
+  box-shadow: none;
+  border: none;
+}
+
+.profile-button:hover {
+  background: rgb(99, 39, 120);
+}
+
+.profile-button:focus {
+  background: #114b5f;
+  box-shadow: none;
+}
+
+.profile-button:active {
+  background: #114b5f;
+  box-shadow: none;
+}
+
+.back:hover {
+  color: #114b5f;
+  cursor: pointer;
+}
+
+.labels {
+  font-size: 11px;
+}
+
+.add-experience:hover {
+  background: #13586f;
+  color: #fff;
+  cursor: pointer;
+  border: solid 1px #114b5f;
+}
+#experience1 {
+  display: none;
+}
+
+#education1 {
+  display: none;
+}
+
+.uploading-image {
+  text-align: center;
+  width: 200px;
+  color: #114b5f;
+}
+.uploading-img {
+  object-fit: contain;
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+}
+
+.uploading-image input {
+  display: none;
+}
+.uploading-image label {
+  cursor: pointer;
+}
+#imageName {
+  color: green;
+}
+.img-main {
+  margin: 50% auto;
+}
+.file-name {
+  border: 1px solid rgba(209, 207, 207, 0.865);
+  width: 200px;
+  overflow: hidden;
+  font-size: medium;
+  padding: 7px;
+  word-wrap: break-word;
+  font-family: "sora";
+}
+
+@media only screen and (max-width: 768px) {
+  .img-main {
+    margin: 0px auto;
+  }
+}

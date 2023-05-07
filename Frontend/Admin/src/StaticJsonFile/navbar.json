@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "icon": "fas fa-tachometer-alt fa-fw me-3",
+    "name": "Dashboard"
+  },
+  {
+    "id": 2,
+    "icon": "fas fa-chart-area fa-fw me-3",
+    "name": "Profile"
+  },
+  {
+    "id": 3,
+    "icon": "fas fa-lock fa-fw me-3",
+    "name": "Settings"
+  },
+  {
+    "id": 4,
+    "icon": "fas fa-lock fa-fw me-3",
+    "name": "Log Out"
+  }
+]

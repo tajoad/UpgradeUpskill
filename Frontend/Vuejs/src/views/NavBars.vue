@@ -10,7 +10,7 @@
 				<i class="fas fa-chart-area fa-fw me-3"></i>
 				<span class="text">Profile</span>
 			</router-link>
-			<router-link to="/learningroom" class="button nav-option">
+			<router-link :to="{name: 'LearningRoom', params: {id: this.id}}" class="button nav-option">
 				<i class="fa fa-book fa-fw me-3"></i>
 				<span class="text">Learning Room</span>
 			</router-link>
